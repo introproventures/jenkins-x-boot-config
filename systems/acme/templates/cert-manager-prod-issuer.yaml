@@ -18,6 +18,7 @@ spec:
         - "{{ .Values.cluster.domain }}"
       # ACME DNS-01 provider configurations
       dns01:
+        cnameStrategy: {{ .Values.cnameStrategy | default "None" }}
 {{- if eq .Values.cluster.provider "gke" }}
         clouddns:
           # The project in which to update the DNS zone
