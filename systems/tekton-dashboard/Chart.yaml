@@ -1,0 +1,7 @@
+apiVersion: v1
+appVersion: 0.4.1
+description: Tekton Dashboard Chart
+maintainers:
+- name: Team
+name: tekton-dashboard
+version: "1"

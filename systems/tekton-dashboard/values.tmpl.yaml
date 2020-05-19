@@ -1,0 +1,7 @@
+ingress:
+  name: tekton
+  domain: {{ .Requirements.ingress.domain }}
+  namespaceSubDomain: {{ .Requirements.ingress.namespaceSubDomain }}
+  tls:
+    enabled: {{ .Requirements.ingress.tls.enabled }}
+    production: {{ .Requirements.ingress.tls.production }}

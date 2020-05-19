@@ -269,6 +269,18 @@ pipelineConfig:
             name: update-webhooks
           - args:
             - step
+            - helm
+            - apply
+            - --boot
+            - --remote
+            - --no-vault
+            - --name
+            - tekton-dashboard
+            command: jx
+            dir: /workspace/source/systems/tekton-dashboard
+            name: install-tekton-dashboard            
+          - args:
+            - step
             - verify
             - install
             - --pod-wait-time
